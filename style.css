@@ -1,0 +1,151 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+
+  font-family: oddvaltext;
+}
+/* Fonts */
+@font-face {
+  font-family: akira;
+  src: url(Stocks/Fonts/Akira\ Expanded\ Demo.otf);
+}
+@font-face {
+  font-family: oddvaltext;
+  src: url(Stocks/Fonts/OddvalText-SemiBold.ttf);
+}
+
+/* Navbar */
+.nav {
+  margin: 100px 200px 150px 200px;
+  padding: 20px 100px 20px 100px;
+  font-family: oddvaltext;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Home */
+.home {
+  margin: 100px 200px 100px 200px;
+  padding: 20px 100px 20px 100px;
+}
+#cardImg {
+  border-radius: 10px;
+  height: 120px;
+  transition: 0.1s linear 0s;
+}
+#card {
+  margin: 0px 0px 100px 0px;
+  padding: 15px 15px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+#heading {
+  color: orangered;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: orangered;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .nav {
+    margin: 30px 20px 70px 20px;
+    padding: 15px 20px;
+    font-family: oddvaltext;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+  }
+  /* Home */
+  .home {
+    font-size: x-small;
+    margin: 0px 0px 0px 0px;
+    padding: 20px 20px 20px 20px;
+  }
+  #cardImg {
+    border-radius: 10px;
+    height: 70px;
+    transition: 0.1s linear 0s;
+  }
+  #card {
+    height: 170px;
+    margin: 0px 0px 50px 0px;
+    padding: 15px 15px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+  }
+  #heading {
+    color: orangered;
+  }
+/* Footer */
+.footer {
+  margin-top: 100px;
+  width: 100%;
+  background-color: orangered;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+}
+
+/* Animations and Decors */
+#navIcon:hover {
+  animation-name: click;
+  animation-delay: 0s;
+  animation-duration: 0.5s;
+}
+@keyframes click {
+  0% {
+    rotate: 0deg;
+    color: orangered;
+  }
+  50% {
+    rotate: -50deg;
+    color: orangered;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+P::selection {
+  background-color: rgba(255, 255, 255, 0);
+  color: orangered;
+}
+h1::selection {
+  background-color: orangered;
+  color: white;
+}
+#card:hover #cardImg {
+  rotate: 10deg;
+}
