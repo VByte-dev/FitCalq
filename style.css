@@ -44,7 +44,7 @@ body {
 #cardImg {
   border-radius: 10px;
   height: 120px;
-  rotate: -10deg;
+  /* rotate: -10deg; */
   transition: 0.1s linear 0s;
 }
 #card {
