@@ -1,0 +1,179 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+
+  font-family: oddvaltext;
+}
+/* Fonts */
+@font-face {
+  font-family: akira;
+  src: url(Fonts/Akira\ Expanded\ Demo.otf);
+}
+@font-face {
+  font-family: oddvaltext;
+  src: url(Fonts/OddvalText-SemiBold.ttf);
+}
+
+/* Navbar */
+.nav {
+  margin: 100px 200px 100px 200px;
+  padding: 20px 100px 20px 100px;
+  font-family: oddvaltext;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Home */
+.home{
+  margin: 100px 200px 0px 200px;
+  border: 2px solid orangered;
+  padding: 100px 200px 100px 100px;
+  text-align: left;
+  border-radius: 10px;
+}
+#homeGender{
+  margin-bottom: 30px;
+}
+label{
+  font-size: large;
+}
+#genderMale{
+  height: 50px;
+  width: 100px;
+  background-color: white;
+  color: orangered;
+  font-family: oddvaltext;
+  font-size: medium;
+  border-radius: 10px;
+  border: 2px solid orangered;
+}
+#genderFemale{
+  height: 50px;
+  width: 100px;
+  background-color: white;
+  color: orangered;
+  font-family: oddvaltext;
+  font-size: medium;
+  border-radius: 10px;
+  border: 2px solid orangered;
+}
+#heightInput{
+  font-family: oddvaltext;
+  padding: 10px;
+  outline: none;
+  margin-bottom: 30px;
+  background-color: white;
+  border: 2px solid orangered;
+  border-radius: 10px;
+  height: 50px;
+}
+#weightInput{
+  font-family: oddvaltext;
+  padding: 10px;
+  outline: none;
+  margin-bottom: 30px;
+  background-color: white;
+  border: 2px solid orangered;
+  border-radius: 10px;
+  height: 50px;
+}
+#ageInput{
+  font-family: oddvaltext;
+  padding: 10px;
+  outline: none;
+  margin-bottom: 30px;
+  background-color: white;
+  border: 2px solid orangered;
+  border-radius: 10px;
+  height: 50px;
+}
+#act1, #act2, #act3, #act4{
+  height: 50px;
+  width: 100px;
+  background-color: white;
+  color: orangered;
+  font-family: oddvaltext;
+  font-size: medium;
+  border-radius: 10px;
+  border: 2px solid orangered;
+}
+
+/* Responsive */
+@media (max-width: 500px){
+    /* Navbar */
+    .nav {
+      margin: 30px 20px 70px 20px;
+      padding: 15px 20px;
+      font-family: oddvaltext;
+      font-size: small;
+      font-weight: bold;
+      border-radius: 10px;
+      background-color: white;
+      color: rgb(0, 0, 0);
+      display: flex;
+      justify-content: space-between;
+    }
+}
+
+/* Animations and Decors */
+#navIcon:hover {
+  animation-name: click;
+  animation-delay: 0s;
+  animation-duration: 0.5s;
+}
+@keyframes click {
+  0% {
+    rotate: 0deg;
+    color: orangered;
+  }
+  50% {
+    rotate: -50deg;
+    color: orangered;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+#genderMale:active{
+  background-color: orangered;
+  color: white;
+  border: 2px solid white;
+}
+#genderFemale:active{
+  background-color: orangered;
+  color: white;
+  border: 2px solid white;
+}
+#act1:active{
+  background-color: orangered;
+  color: white;
+  border: 2px solid white;
+}
+#act2:active{
+  background-color: orangered;
+  color: white;
+  border: 2px solid white;
+}
+#act3:active{
+  background-color: orangered;
+  color: white;
+  border: 2px solid white;
+}
+#act4:active{
+  background-color: orangered;
+  color: white;
+  border: 2px solid white;
+}

@@ -47,7 +47,7 @@ body {
   /* rotate: -10deg; */
   transition: 0.1s linear 0s;
 }
-#card {
+#card1, #card2, #card3, #card4 {
   margin: 0px 0px 100px 0px;
   padding: 15px 15px;
   display: flex;
@@ -72,6 +72,7 @@ body {
 
 /* Responsive */
 @media (max-width: 500px) {
+  /* Navbar */
   .nav {
     margin: 30px 20px 70px 20px;
     padding: 15px 20px;
@@ -95,7 +96,7 @@ body {
     height: 70px;
     transition: 0.1s linear 0s;
   }
-  #card {
+  #card1, #card2, #card3, #card4 {
     height: 170px;
     margin: 0px 0px 50px 0px;
     padding: 15px 15px;
@@ -147,6 +148,15 @@ h1::selection {
   background-color: orangered;
   color: white;
 }
-#card:hover #cardImg {
+#card1:hover #cardImg {
+  rotate: 10deg;
+}
+#card2:hover #cardImg {
+  rotate: 10deg;
+}
+#card3:hover #cardImg {
+  rotate: 10deg;
+}
+#card4:hover #cardImg {
   rotate: 10deg;
 }
